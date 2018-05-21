@@ -17,7 +17,7 @@ vector<Interval> Solution::merge(vector<Interval> &A) {
     // Do not read input, instead use the arguments to the function.
     // Do not print the output, instead return values as specified
     // Still have a doubt. Checkout www.interviewbit.com/pages/sample_codes/ for more details
-
+    
     sort(A.begin(), A.end(), [](const Interval &a, const Interval &b) {
     	return a.first < b.first;
     });
