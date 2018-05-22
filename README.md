@@ -1,3 +1,3 @@
-My solutions to Interview Bit questions. Sorted by Topic and further by Buckets.
+My solutions to Interview Bit questions. Sorted by Topic.
 -Aneesh Dandime
 
