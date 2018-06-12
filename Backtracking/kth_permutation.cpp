@@ -35,5 +35,5 @@ string Solution::getPermutation(int n, int k) {
 }
 
 int main(void) {
-	
+	return 0;
 }
