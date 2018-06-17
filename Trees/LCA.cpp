@@ -17,8 +17,10 @@ void dfs(TreeNode *A, vector<int> &euler, vector<int> &height, int h) {
 	height.push_back(h);
 
 	dfs(A->left, euler, height, h + 1);
+	euler.push_back(A->val);
+	height.push_back(h);
+	
 	dfs(A->right, euler, height, h + 1);
-
 	euler.push_back(A->val);
 	height.push_back(h);
 }
@@ -49,7 +51,7 @@ int lca(TreeNode *A, int B, int C) {
 	}
 
 	int i = min(first_c, first_b);
-	int j = min(first_b, first_c);
+	int j = max(first_b, first_c);
 	int ans_ht = height[i];
 	int ans_val = euler[i];
 	while(i <= j) {
