@@ -5,7 +5,7 @@ int isMatch(const string text, const string pat) {
     int n = pat.size();
     int m = text.size();
 
-    vector<vector<bool>> dp(n, vector<bool>(m, false));
+    vector<vector<bool>> dp(n + 1, vector<bool>(m + 1, false));
     dp[0][0] = true;
     for(int i = 1; i <= n; ++i) {
         dp[i][0] = dp[i - 1][0] && pat[i - 1] == '*';
